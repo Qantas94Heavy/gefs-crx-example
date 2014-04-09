@@ -1,0 +1,12 @@
+{
+  "name": "GEFS Chrome Extension Example",
+  "description": "This extension is just an example of creating a simple extension for GEFS.",
+  "manifest_version": 2,
+  "version": "0.1.0",
+  "content_scripts": [{
+    "run-at": "document-end",
+    "matches": ["http://www.gefs-online.com/gefs.php*", "http://gefs-online.com/gefs.php*"],
+    "js": ["loader.js"]
+  }],
+  "web_accessible_resources": ["code.js"]
+}
